@@ -1,7 +1,6 @@
 // Zone configuration for all 10 zones
-// Audio files mapped to actual filenames in /public/audio/
-// BASE_URL ensures correct paths for GitHub Pages (e.g. /shtouka/ when deployed to subpath)
-const base = import.meta.env.BASE_URL;
+// Audio URLs from Vite-managed imports (base path applied automatically)
+import { audioUrls } from '../assets/audio/index.js';
 
 export const ZONE_MAX_DURATION = 40; // seconds
 export const ZONE_FADE_START = 37; // start fading song
@@ -13,7 +12,7 @@ export const zones = [
     name: 'Pop Party',
     nameHe: 'מסיבת פופ',
     emoji: '🎤🎀',
-    audioFile: `${base}audio/קוראים לו שטוקה טוקה פופ.mp3`,
+    audioFile: audioUrls[1],
     speed: 5,
     obstacleInterval: 2.5,
     isSafeZone: false,
@@ -37,7 +36,7 @@ export const zones = [
     name: 'Cartoon Theme',
     nameHe: 'עולם הקריקטורות',
     emoji: '📺',
-    audioFile: `${base}audio/שטוקה טוקה - קצבי, חצוצרות.mp3`,
+    audioFile: audioUrls[2],
     speed: 4.5,
     obstacleInterval: 2.75,
     isSafeZone: false,
@@ -61,7 +60,7 @@ export const zones = [
     name: 'Israeli Rock',
     nameHe: 'רוק ישראלי',
     emoji: '🎸🇮🇱',
-    audioFile: `${base}audio/בבוקר הוא קופץ עליי - רוק מזרחי ישראלי.mp3`,
+    audioFile: audioUrls[3],
     speed: 5,
     obstacleInterval: 2.5,
     isSafeZone: false,
@@ -85,7 +84,7 @@ export const zones = [
     name: 'Heavy Rock',
     nameHe: 'רוק כבד',
     emoji: '🎸⚡',
-    audioFile: `${base}audio/קוראים לו שטוקה טוקה - רוק כבד.mp3`,
+    audioFile: audioUrls[4],
     speed: 6,
     obstacleInterval: 2,
     isSafeZone: false,
@@ -109,7 +108,7 @@ export const zones = [
     name: 'Hawaiian Paradise',
     nameHe: 'גן עדן הוואי',
     emoji: '🌺',
-    audioFile: `${base}audio/שטוקה טוקה - הוואי מלא.mp3`,
+    audioFile: audioUrls[5],
     speed: 4,
     obstacleInterval: 3,
     isSafeZone: false,
@@ -133,7 +132,7 @@ export const zones = [
     name: 'Reggae Chill',
     nameHe: 'רגאיי',
     emoji: '🎵',
-    audioFile: `${base}audio/שטוקה טוקה- ראגיי.mp3`,
+    audioFile: audioUrls[6],
     speed: 3.5,
     obstacleInterval: 3.25,
     isSafeZone: false,
@@ -157,7 +156,7 @@ export const zones = [
     name: 'Hawaiian Acoustic',
     nameHe: 'הוואי אקוסטי',
     emoji: '🎸',
-    audioFile: `${base}audio/שטוקה טוקה.- הוואי.mp3`,
+    audioFile: audioUrls[7],
     speed: 3,
     obstacleInterval: 3.5,
     isSafeZone: false,
@@ -181,7 +180,7 @@ export const zones = [
     name: 'Eastern Vibes',
     nameHe: 'מזרחי',
     emoji: '🪘',
-    audioFile: `${base}audio/בבוקר הוא קופץ עליי - רוסי מזרחי.mp3`,
+    audioFile: audioUrls[8],
     speed: 4,
     obstacleInterval: 3,
     isSafeZone: false,
@@ -205,7 +204,7 @@ export const zones = [
     name: 'Grand Finale',
     nameHe: 'הגמר הגדול',
     emoji: '🎺❤️',
-    audioFile: `${base}audio/קוראים לו שטוקה טוקה חצוצרות.mp3`,
+    audioFile: audioUrls[9],
     speed: 4,
     obstacleInterval: 2,
     isSafeZone: true,
@@ -229,7 +228,7 @@ export const zones = [
     name: 'Ending Song',
     nameHe: 'שיר סיום',
     emoji: '💕',
-    audioFile: `${base}audio/קוראים לו שטוקה טוקה - שיר סיום.mp3`,
+    audioFile: audioUrls[10],
     speed: 3,
     obstacleInterval: 2.5,
     isSafeZone: true,
