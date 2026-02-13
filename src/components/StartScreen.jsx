@@ -11,7 +11,7 @@ export default function StartScreen({ onStart, onResume, hasSavedGame }) {
           10 עולמות, 10 שירים, הרפתקה אחת!
         </p>
 
-        <div style={{ marginTop: 30, display: 'flex', flexDirection: 'column', gap: 12, alignItems: 'center' }}>
+        <div className="start-buttons">
           <button className="btn btn-play" onClick={onStart}>
             🎮 התחילו לשחק!
           </button>
