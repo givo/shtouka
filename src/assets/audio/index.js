@@ -1,7 +1,7 @@
 // Vite resolves these imports at build time - URLs include correct base path for GitHub Pages
 // Using ?url to get the resolved URL string instead of the asset
 
-import pop from './קוראים לו שטוקה טוקה פופ.mp3?url';
+import pop from './קוראים לו שטוקה טוקה - שיר ראשון.mp3?url';
 import cartoon from './שטוקה טוקה - קצבי, חצוצרות.mp3?url';
 import israeliRock from './בבוקר הוא קופץ עליי - רוק מזרחי ישראלי.mp3?url';
 import heavyRock from './קוראים לו שטוקה טוקה - רוק כבד.mp3?url';
